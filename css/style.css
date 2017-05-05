@@ -10,33 +10,40 @@ header {
   background-position: center;
   height: 1000px;
 }
-.navbar-fixed-top {
-  background-color: #f9f8fb;
-  height: 107px;
-  /*max-width: 1500px;*/
-  margin: 0 auto;
+.logo-header {
+  float: left;
 }
-header .logo {
+.menu-header {
+  float: right;
+}
+/*header .logo {
   top: 38px;
+}*/
+.navbar-header {
+  height: 120px;
 }
-header nav ul {
+.navbar-nav {
+  margin-top: 30px;
+  
+}
+/*header nav ul {
   margin-top: 68px;
   padding-left: 66px;
   
-}
-header nav ul li {
+}*/
+.list-menu {
   text-decoration: none;
   list-style-type: none;
   display: inline;
   text-transform: uppercase;
 }
-header nav ul li a {
+.list-menu a {
   color: #000;
   font-weight: bold;
   font-size: 14px;
   margin-right: 33px;
 }
-header nav ul li a:hover {
+.list-menu a:hover {
   text-decoration: none;
   color: #000;
   border-top: 3px solid #ff6033;
@@ -104,7 +111,7 @@ body { height: auto; }
 }
 .services .text-button {
   margin-top: 20px;
- }
+}
 .services .content-right h2 {
   margin-top: 332px;
   font-size: 66px;
@@ -140,10 +147,12 @@ body { height: auto; }
   text-align: center;
 }
 .gallery .images-left {
-  padding: 15px 15px 15px 0;
+  /*padding: 15px 15px 15px 0;*/
+  margin: 0; 
 }
 .gallery .images-right {
-  padding: 15px 0 15px 15px;
+  /*padding: 15px 0 15px 15px;*/
+  margin: 0;
 }
 .gallery button {
   width: 200px;
@@ -260,26 +269,54 @@ footer p {
 footer span {
   color: #a82944;
 }
+
+@media (max-width: 1150px) {
+  .services .content-right img {
+    display: none;
+  }
+}
 /*
  * max-width 800px
  */
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
   body {
     padding: 0;
     margin: 0;
   }
+  .list-menu {
+    float: none;
+    text-align: center;
+  }
+  .list-menu a:hover {
+    border: none;
+  }
+  .content-about {
+    text-align: center;
+  }
+  .about h2 {
+    margin-top: 20px;
+  }
   .about p:last-child {
     margin-bottom: 119px;
   }
-  .services .content-right img {
-    display: none;
-  }
   .services .content-right h2 {
+    position: relative;
     text-align: center;
-    margin-top: 40px;
+    margin-top: -600px;
   }
   .services .buttons-our {
     margin-top: 220px;
+  }
+  .services .btn-our {
+    width: 400px;
+    height: 100px;
+    background-color: #fff;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+  }
+  .services .text-button {
+    margin-top: 2px;
   }
   .gallery .images-left,
   .gallery .images-right {
@@ -307,6 +344,7 @@ footer span {
   .contact input,
   .contact textarea {
     width: 300px;
+    margin-left: 10px;
   } 
   .default .navbar-nav > li > a:hover {
     background-color: red;

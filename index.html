@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+  
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,31 +13,43 @@
 </head>
 <body>
   <header id="home">
-    <div class="container">
-      <div class="row"> 
-        <nav class="navbar navbar-default navbar-fixed-top">
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
-           <span class="sr-only">Przełącznik nawigacji</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> 
-        <div class="logo col-sm-2 navbar-header">
-        
-          <img src="images/logo.png" alt="logo">
-        </div>
-        <div class="collapse navbar-collapse" id="mainmenu">  
-          <ul class="col-sm-offset-4 col-sm-6 nav navbar-nav">
-            <li class="dropdown"><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#gallery">gallery</a></li>
-            <li><a href="#blog">blog</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-        </div>  
-        </nav>
-      </div>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="logo">
+      </a>
+      <!-- <div class="logo col-sm-2 navbar-header">
+            </div> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="list-menu"><a href="#home">home<span class="sr-only">(current)</span></a></li>
+        <li class="list-menu"><a href="#about">about</a></li>
+        <li class="list-menu"><a href="#services">services</a></li>
+        <li class="list-menu"><a href="#gallery">gallery</a></li>
+        <li class="list-menu"><a href="#blog">blog</a></li>
+        <li class="list-menu"><a href="#contact">contact</a></li>        
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+      <div class="container">
         <div class="row">
           <div class="fresh col-sm-4">
             <h2>Fresh Life</h2>
@@ -53,7 +66,7 @@
     <div class="container">
       <div class="row">
         <img src="images/raspberry.png" class="col-sm-6">
-        <div class="col-sm-6">
+        <div class="col-sm-6 content-about">
           <h2>About Us</h2>
           <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
           <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
@@ -64,7 +77,7 @@
   <section class="services" id="services">
     <div class="container">
       <div class="row">
-        <div class="buttons-our col-sm-offset-1 col-sm-4 col-xs-6">
+        <div class="buttons-our col-sm-offset-1 col-sm-4 col-xs-12">
           <button class="btn-our">
             <div class="col-sm-9 text-button">Online Shopping</div>
             <div class="col-sm-3"><img src="images/basket.jpg"></div>
@@ -82,7 +95,7 @@
             <div class="col-sm-3"><img src="images/carrot.jpg"></div>
           </button>
         </div>
-        <div class="content-right col-sm-offset-2 col-sm-5 col-xs-6">
+        <div class="content-right col-sm-offset-2 col-sm-5 col-xs-12">
           <h2>Our Services</h2>
           <img src="images/tomato.png">
         </div>
@@ -204,6 +217,7 @@
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 800)});
   </script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
+
 </html>
