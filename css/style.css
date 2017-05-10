@@ -147,11 +147,11 @@ body { height: auto; }
   text-align: center;
 }
 .gallery .images-left {
-  /*padding: 15px 15px 15px 0;*/
+  padding: 15px 15px 15px 0;
   margin: 0; 
 }
 .gallery .images-right {
-  /*padding: 15px 0 15px 15px;*/
+  padding: 15px 0 15px 15px;
   margin: 0;
 }
 .gallery button {
@@ -302,7 +302,9 @@ footer span {
   .services .content-right h2 {
     position: relative;
     text-align: center;
-    margin-top: -600px;
+    width: 100%;
+    margin-top:50px;
+    /*margin-left: 200px;  */
   }
   .services .buttons-our {
     margin-top: 220px;
@@ -320,10 +322,10 @@ footer span {
   }
   .gallery .images-left,
   .gallery .images-right {
-    padding: 0;
+    padding: 0 0 15px 0;
   }
   .gallery img {
-    width: 80%;
+    width: 100%;
     margin: 10px auto;
   }
   .subscribe h2,
@@ -351,3 +353,45 @@ footer span {
   }
 }
 
+
+@media (max-width: 1000px) and (min-width: 800px) {
+
+.services .content-right h2 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top:-650px;
+    margin-left: 15%;
+  }
+  .buttons-our {
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 930px) and (min-width: 768px){
+  .menu-header {
+    width: 94%;
+    left: 5%;
+    margin: auto;
+    padding: 0;
+    position: relative;
+  }
+  .navbar-brand > img {
+    margin-left: 350px;
+    margin-bottom: 0;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar-nav>li:first-child {
+    margin-left: 20px;
+  }
+  .navbar-nav>li {
+    float: right;
+  }
+  .buttons-our {
+    text-align: center;
+  }
+}  
